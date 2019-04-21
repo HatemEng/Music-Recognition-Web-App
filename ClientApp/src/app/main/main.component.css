@@ -1,0 +1,71 @@
+.col-md-5, .col-md-1 {
+  padding: 0;
+}
+
+
+.custom-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0 5px 5px 0px;
+}
+
+input {
+  padding: 20px;
+  border-radius: 5px 0 0 5px;
+}
+
+
+.video {
+  margin: 25px;
+  background: #f1f1f1;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.video:hover {
+  cursor: pointer;
+  background: #c1c1c1;
+}
+
+
+.thumb-video {
+  padding: 0;
+  position: relative;
+  top: -40px;
+  left: 23px;
+}
+
+h4 {
+  padding-left: 9px;
+}
+
+
+.video-player {
+  position: absolute;
+  background: black;
+  border-radius: 6px;
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  z-index: 1000;
+  height: 400px;
+}
+
+
+.close-player {
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.close-player:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  border: none;
+}

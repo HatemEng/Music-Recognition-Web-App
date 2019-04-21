@@ -1,0 +1,58 @@
+<div class="app">
+
+
+  <div class="container">
+    <br><br><br>
+    <h2 class="text-center">Music Recognition App</h2>
+    <br><br><br>
+     <div class="row" align="center" *ngIf="!message">
+       <div class="col-md-5 col-md-offset-3  col-sm-8">
+         <input type="text" class="form-control" placeholder="Put the url here..." #url>
+       </div>
+       <div class="col-md-1 col-sm-4">
+         <button class="btn btn-primary custom-btn" (click)="getSearch(url.value)">Search</button>
+       </div>
+     </div>
+
+    <div class="messageContainer" align="center" *ngIf="message">
+      <h4 class="text-center" [innerHTML]="message"></h4>
+      <img src="../../assets/giphy.gif" alt="" *ngIf="searchedVideos.length <= 0">
+    </div>
+
+    <div class="videos-container" *ngIf="searchedVideos.length >0">
+      <h2 class="text-center"> <button class="btn btn-primary" (click)="getYoutubeVideos(searchQuery, previousPageCode)">Back</button>
+        Play List
+        <button class="btn btn-primary" (click)="getYoutubeVideos(searchQuery, nextPageCode)">Next</button>
+      </h2>
+      <br><br>
+      <div class=""  align="center">
+        <div class="video col-md-6" *ngFor="let item of searchedVideos" (click)="selectedVideo = item">
+          <div class="row">
+            <div class="col-md-4 thumb-video">
+              <img [src]="item.snippet.thumbnails.high.url" alt="" width="140" height="100">
+            </div>
+            <div class="col-md-8" style="padding: 10px;">
+              <h4>{{item.snippet.title}}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <br><br>
+  </div>
+
+
+</div>
+
+
+
+
+
+<div class="video-player" *ngIf="selectedVideo">
+  <i class="glyphicon glyphicon-remove close-player" (click)="selectedVideo = null"></i>
+
+  <iframe width="420" height="315" [src]="videoURL(selectedVideo.id.videoId)">
+  </iframe>
+</div>

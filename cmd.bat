@@ -1,0 +1,1 @@
+ffmpeg -i video.mp4 -t 00:01:00 -async 1 cut.mp3
