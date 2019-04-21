@@ -1,14 +1,14 @@
 HTTP/1.1 100 Continue
 
 HTTP/1.1 200 OK
-Date: Sun, 21 Apr 2019 06:42:21 GMT
+Date: Sun, 21 Apr 2019 06:51:29 GMT
 Content-Type: application/json
 Content-Length: 164
 Connection: keep-alive
-Set-Cookie: __cfduid=da8261c717204aa4ffef5118fdba471ee1555828938; expires=Mon, 20-Apr-20 06:42:18 GMT; path=/; domain=.audd.io; HttpOnly
+Set-Cookie: __cfduid=d343122f94a20cd204b884fecc15afd451555829487; expires=Mon, 20-Apr-20 06:51:27 GMT; path=/; domain=.audd.io; HttpOnly
 Access-Control-Allow-Origin: *
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Server: cloudflare
-CF-RAY: 4cad60947a58afda-BGW
+CF-RAY: 4cad6dfaf8f2af98-BGW
 
 {"status":"success","result":{"artist":"Arijit Singh","title":"First Class","album":"First Class (Kalank)","release_date":"2019-03-22","label":"Zee Music Company"}}
