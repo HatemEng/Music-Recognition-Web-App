@@ -1,6 +1,6 @@
 ﻿# Music Recognition Web App
  
- ## Used Technology
+ ##  Used Technology
  - FFmpeg
  - youtube-dl
  - api.audd.io
